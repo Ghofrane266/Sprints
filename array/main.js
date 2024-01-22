@@ -77,7 +77,7 @@ let average = (array) => {
     for (let element of array) {
         sum += element
     }
-    return result += Math.floor(sum / 2)
+    return result += Math.floor(sum / array.length)
 }
 //EX10:
 //.Write a function called square that takes an array as a parameter and returns a new array where each element is the square of the element of the given array.
@@ -112,7 +112,7 @@ let isArray = (array) => {
 let min = (array) => {
     let smallest = array[0]
     for (let i = 0; i < array.length; i++) {
-
+ 
         if (array[i] <= smallest) {
             smallest = array[i]
         }
