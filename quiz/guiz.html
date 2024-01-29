@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/quiz.css" />
+    <link rel="stylesheet" href="./quiz.css" />
     <title>Document</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -44,10 +44,10 @@
           id="answer"
         />
         <div class="input-group-append">
-          <button class="btn btn-warning" type="button" id="submitAnswer">
+          <button class="btn btn-warning" type="button" id="submitAnswer" onclick="changeQuiz()">
             Submit
           </button>
-          <button class="btn btn-primary" type="button" id="next">Next</button>
+         
         </div>
       </div>
       <div
@@ -75,9 +75,9 @@
             id="character"
           />
         </div>
-        <audio id="yes" src="/assets/audio/you win.unknown" controls="false" preload="auto" style="display: none;"></audio>
-        <audio id="gun" src="/assets/audio/gunShot.mp3" controls="false" preload="auto" style="display: none;"></audio>
-        <audio id="youShD" src="/assets/audio/youShouldDie.mp3" controls="false" preload="auto" style="display: none;"></audio>
+        <audio id="yes" src="./assets/audio/yes.mp3" controls="false" preload="auto" style="display: none;"></audio>
+        <audio id="gun" src="./assets/audio/gunShot.mp3" controls="false" preload="auto" style="display: none;"></audio>
+        <audio id="youShD" src="./assets/audio/youShouldDie.mp3" controls="false" preload="auto" style="display: none;"></audio>
       </div>
     </div>
 
@@ -86,6 +86,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="/quiz.js"></script>
+    <script src="./quiz.js"></script>
   </body>
 </html>

@@ -40,8 +40,8 @@ let emptyObject = () => {
 }
 //6.Write a function called addProperty that takes two parameters, an object, and a key as a string. It then adds the key as a property in the object and gives it the value true.
 let addProperty = (obj, key) => {
-  obj.key = true
-  console.log(obj)
+  obj[key] = true
+  return obj
 }
 //7.Write‌ ‌a‌ ‌function‌ ‌called‌ ‌‌deleteProperty‌‌ ‌that‌ ‌takes‌ ‌two parameters an‌ ‌object‌ ‌and‌ a key as a string. It then removes the property with that key from the object.
 let deleteProperty = (obj, key) => {
